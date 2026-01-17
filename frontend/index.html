@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PassGuard AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>PassGuard AI</h1>
+  <p>AI-powered password security dashboard</p>
+</header>
+
+<section class="card">
+  <h2>Password Risk Check</h2>
+  <input id="password" type="password" placeholder="Enter password">
+  <button onclick="checkPassword()">Check Risk</button>
+  <p id="riskOutput"></p>
+</section>
+
+<section class="card">
+  <h2>Generated Strong Password</h2>
+  <button onclick="generatePassword()">Generate</button>
+  <p id="generatedPassword"></p>
+</section>
+
+<section class="card">
+  <h2>Password Evolution</h2>
+  <ul id="evolutionList"></ul>
+</section>
+
+<section class="card">
+  <h2>Password Usage Graph</h2>
+  <div class="graph-placeholder">[ Graph Visualization Placeholder ]</div>
+</section>
+
+<script src="mockApi.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
 
